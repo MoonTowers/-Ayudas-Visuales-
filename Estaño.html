@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
+    <title>Estaño</title>
+
+    <!-- ARCHIVOS DE ESTILO CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ICONO EN LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="icon" href="img/icon-menu.svg">
+</head>
+<body>
+
+<!-- BARRA SUPERIOR FIJA (TOP BAR)-->
+<!-- CONTIENE EL BOTON DEL MENU LATERAL Y EL TITULO DE AL LADO-->
+    <header class="top-bar">
+        <!--<div class="logo-area"></div>-->
+
+        <!-- BOTON DEL MENU LATERAL (ABRE/CIERRA EL PANEL) -->
+        <label for="btn-menu" class="icon-menu">
+            <img src="img/icon-menu.svg" alt="menu">
+        </label>
+
+        <!-- TITULO EN LA BARRA SUPERIOR AL LADO DEL ICONO -->
+        <span class="titulo">Ayudas visuales - Estaño</span>
+    </header>
+
+<!-- CHECKBOX OCULTO QUE ACTIVA Y DESACTIVA EL MENU LATERAL -->
+    <input type="checkbox" id="btn-menu">
+
+<!-- MENÚ LATERAL ROJO-->
+<!-- Panel desplegable con enlaces a cada producto-->
+    <div class="container-menu">
+        <div class="cont-menu">
+
+            <!-- BOTON PARA CERRAR EL MENU LATERAL -->
+            <label for="btn-menu" class="close-menu">
+                <img src="img/xbutton.svg" alt="cerrar">
+            </label>
+
+            <!-- NAVEGACION ENTRE PAGINAS -->
+            <!-- HREF CONTIENE EL NOMBRE DEL ARCHIVO HTML -->
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="Bobinado.html">Bobinado</a>
+                <a href="Colocacion.html">Colocación</a>
+                <a href="Amarre.html">Amarre</a>
+                <a href="Pegado.html">Pegado</a>
+                <a href="Laser.html">Láser</a>
+                <a href="Estaño.html">Estaño</a>
+                <a href="Inspeccion.html">Inspección</a>
+                <a href="General.html">General</a>
+            </nav>
+
+        </div>
+    </div>
+
+<!-- CONTENIDO DE ESTA PÁGINA  (IMAGENES)-->
+    <main>
+
+        <!-- ENCABEZADO DE LA PAGINA -->
+        <div class="encabezado">
+            <h1>Estaño</h1>
+        </div>
+
+        <!-- CONTIENE LAS IMAGENES-->
+        <!-- CADA ELEMENTO ES UN ENLACE QUE ACTIVA EL LIGHTBOX-->
+        <div class="galeria">
+
+            <!-- Imagen 1 -->
+            <a href="#est-img1" class="item">
+                <img src="img/estaño/cangrejo1.jpg" alt="Ferrari1" loading="lazy">
+                <p>Este es un ferrari rojo</p>
+            </a>
+
+            <!-- Imagen 2 -->
+            <a href="#est-img2" class="item">
+                <img src="img/estaño/cangrejo2.webp" alt="Ferrari2" loading="lazy">
+                <p>Este es otro ferrari</p>
+            </a>
+
+            <!-- Imagen 3 -->
+            <a href="#est-img3" class="item">
+                <img src="img/estaño/cangrejo3.webp" alt="FerrariBlack" loading="lazy">
+                <p>Este es negro</p>
+            </a>
+        
+        </div>
+               
+        <!-- LIGHTBOX -->
+        <!-- APARECE AL HACER CLICK EN UNA IMAGEN; SE OCULTA AL CERRAR-->
+        <!-- CADA BLOQUE CORRESPONDE A UNA IMAGEN AMPLIADA-->
+
+        <!-- LIGHTBOX IMAGEN 1 -->
+        <div class="lightbox" id="est-img1">
+            <a href="#">×</a> <!-- cerrar -->
+            <img src="img/estaño/cangrejo1.jpg" alt="Ferrari1">
+            <p class="caption">Este es un ferrari rojo</p>
+        </div>
+
+        <!-- LIGHTBOX IMAGEN 2 -->
+        <div class="lightbox" id="est-img2">
+            <a href="#">×</a> <!-- cerrar -->
+            <img src="img/estaño/cangrejo2.webp" alt="Ferrari2">
+            <p class="caption">Este es otro ferrari</p>
+        </div>
+
+        <!-- LIGHTBOX IMAGEN 3 -->
+        <div class="lightbox" id="est-img3">
+            <a href="#">×</a> <!-- cerrar -->
+            <img src="img/estaño/cangrejo3.webp" alt="FerrariBlack">
+            <p class="caption">Este es otro ferrari</p>
+        </div>
+
+    </main>
+
+</body>
+</html>

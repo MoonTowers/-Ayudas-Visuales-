@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
+    <title>Ayudas visuales</title>
+
+    <!-- ARCHIVOS DE ESTILO CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ICONO EN LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="icon" href="img/icon-menu.svg">
+</head>
+<body>
+    
+<!-- BARRA SUPERIOR FIJA (TOP BAR)-->
+<!-- CONTIENE EL BOTON DEL MENU LATERAL Y EL TITULO DE AL LADO-->
+        
+    <header class="top-bar">
+        <!--<div class="logo-area"></div>
+                 Aquí puedes poner un logo si quieres -->
+        <!-- ÍCONO DEL MENU LATERAL (ABRIR/CERRAR EL PANEL) -->
+        <label for="btn-menu" class="icon-menu">
+            <img src="img/icon-menu.svg" alt="menu">
+        </label>
+
+        <!-- TITULO EN LA BARRA SUPERIOR AL LADO DEL ICONO -->
+        <span class="titulo">Ayudas visuales</span>
+    </header>
+
+<!-- CONTENIDO DE LA PAGINA PRINCIPAL (PORTADA)-->
+<!-- CONTIENE LA IMAGEN DE PORTADA Y EL PARRAFO DEBAJO DE ELLA-->
+
+    <main>
+
+        <!-- CONTENEDOR DE LA IMAGEN DE PORTADA Y TEXTO DEBAJO -->
+        <div class="portada">
+            <img src="img/portada.webp" alt="Portada general">
+            <p class="portada-texto">Bienvenido al catálogo de ayudas visuales</p>
+        </div>
+
+            <!-- Contenedor de tu botón (si lo sigues usando) 
+            <div class="container">
+                <div class="btn-menu"></div>
+            </div>
+            -->
+    </main>
+
+<!-- CHECKBOX OCULTO QUE ACTIVA Y DESACTIVA EL MENU LATERAL -->
+    <input type="checkbox" id="btn-menu">
+
+<!-- FONDO QUE SE OSCURECE AL ABRIR EL MENU -->
+    <div class="container-menu">
+
+        <!-- PANEL LATERAL ROJO -->
+        <div class="cont-menu">
+
+            <!-- CONTIENE LAS OPCIONES DENTRO DE LA BARRA LATERAL -->          
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="Bobinado.html">Bobinado</a>
+                <a href="Colocacion.html">Colocacion</a>
+                <a href="Amarre.html">Amarre</a>
+                <a href="Pegado.html">Pegado</a>
+                <a href="Laser.html">Laser</a>
+                <a href="Estaño.html">Estaño</a>
+                <a href="Inspeccion.html">Inspeccion</a>
+                <a href="General.html">General</a>
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>
+
